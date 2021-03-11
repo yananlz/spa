@@ -1,0 +1,30 @@
+
+body,html{  
+    margin:0;                 
+    padding:0;
+
+}
+div{       
+  margin:50px auto;
+
+}
+p{ 
+  display:inline; 
+  margin-left:360px;
+}
+
+
+input{
+      
+      display:inline;  
+      font-size:1.5em;
+      width:200px;
+      height:30px;
+      margin:0 auto;
+      margin-Bottom:-70px;
+
+}
+i{
+  margin-left:-40px;
+}
+
