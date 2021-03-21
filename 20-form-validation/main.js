@@ -30,7 +30,14 @@ $(()=>{
         if(!/^(0|[1-9]\d*)(\.\d+)?((e|E)(\+|-)?\d+)?$/.test(vall))e.prevendDefault;
 
        });
-   $height.keypress();
+   $height.keypress((e)=>{
+            let key=e.key,
+            vall=e.target.value,
+           pos=e.target.selectionStart;
+            vall=vall.slice(0,pos)+key+vall.slice(pos,vall.length);
+        if(!/^(0|[1-9]\d*)(\.\d+)?((e|E)(\+|-)?\d+)?$/.test(vall))e.prevendDefault;
+           
+   });
    
    //字段级校验
   // $form.focusout((e)=>{
